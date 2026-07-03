@@ -1,0 +1,18 @@
+{
+  "name": "csv-collab-assessment",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w @csv-collab/api\" \"npm run dev -w @csv-collab/web\"",
+    "build": "npm run build -w @csv-collab/api && npm run build -w @csv-collab/web",
+    "test": "npm run test -w @csv-collab/api && npm run test -w @csv-collab/web",
+    "lint": "npm run lint -w @csv-collab/api && npm run lint -w @csv-collab/web"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "prettier": "^3.6.2"
+  }
+}

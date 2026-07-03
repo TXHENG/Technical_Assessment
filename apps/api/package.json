@@ -1,0 +1,47 @@
+{
+  "name": "@csv-collab/api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nest start --watch",
+    "build": "nest build",
+    "start": "node dist/main.js",
+    "test": "jest --runInBand",
+    "lint": "eslint \"src/**/*.ts\""
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.4.19",
+    "@nestjs/core": "^10.4.19",
+    "@nestjs/platform-express": "^10.4.19",
+    "@nestjs/platform-socket.io": "^10.4.19",
+    "@nestjs/websockets": "^10.4.19",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.15.1",
+    "csv-parse": "^5.6.0",
+    "multer": "^2.0.2",
+    "pg": "^8.16.3",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "socket.io": "^4.8.1",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^10.4.9",
+    "@nestjs/schematics": "^10.2.3",
+    "@nestjs/testing": "^10.4.19",
+    "@types/express": "^5.0.3",
+    "@types/jest": "^30.0.0",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^22.15.32",
+    "@types/pg": "^8.15.4",
+    "@typescript-eslint/eslint-plugin": "^8.35.1",
+    "@typescript-eslint/parser": "^8.35.1",
+    "eslint": "^9.30.1",
+    "jest": "^30.0.4",
+    "supertest": "^7.1.3",
+    "ts-jest": "^29.4.0",
+    "ts-loader": "^9.5.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
